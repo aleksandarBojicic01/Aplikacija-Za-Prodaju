@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.aco.aplikacijazaprodaju.kontroler.PregledIzlazaKontroler">
+   <children>
+      <Label layoutX="367.0" layoutY="3.0" text="Pregled izlaza">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1.0" layoutY="38.0" prefHeight="0.0" prefWidth="900.0" />
+      <Button layoutX="8.0" layoutY="8.0" mnemonicParsing="false" onAction="#vratiNaProdajniMeni" text="Nazad" />
+      <TableView fx:id="twIzlazRobe" layoutX="1.0" layoutY="40.0" prefHeight="560.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="tcID" prefWidth="39.200013756752014" text="ID" />
+          <TableColumn fx:id="tcSifra" prefWidth="60.0" text="Sifra" />
+            <TableColumn fx:id="tcNaziv" prefWidth="135.1999740600586" text="Naziv" />
+            <TableColumn fx:id="tcBrend" prefWidth="111.20001220703125" text="Brend" />
+            <TableColumn fx:id="tcKolicina" prefWidth="60.0" text="Kolicina" />
+            <TableColumn fx:id="tcDatumProdaje" prefWidth="120.00003051757812" text="Datum Prodaje" />
+            <TableColumn fx:id="tcKupac" prefWidth="113.5999755859375" text="Kupac" />
+            <TableColumn fx:id="tcGrad" prefWidth="104.800048828125" text="Grad" />
+            <TableColumn fx:id="tcAdresa" prefWidth="155.99993896484375" text="Adresa" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
